@@ -16,3 +16,6 @@ int main()
     }
     return 0;
 }
+
+//Enter the number:-8
+//The absolute value is : 8
