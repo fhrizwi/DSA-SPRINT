@@ -13,3 +13,5 @@ int main()
     cout << "Address of x in main function variable" << &x << endl;
     function(x, y);
 }
+
+//sabhi variable ka address different hota hai ....remember
