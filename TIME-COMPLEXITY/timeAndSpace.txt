@@ -1,0 +1,149 @@
+1️⃣ What is Time Complexity?
+
+Time Complexity tells us how much time an algorithm takes as the input size n grows.
+
+➡ It does NOT mean actual seconds
+➡ It means number of operations
+
+Common Notation: Big-O (O)
+Notation	        Meaning	Example
+O(1)	            Constant time	Accessing array element
+O(log n)	        Logarithmic	Binary Search
+O(n)	            Linear	Single loop
+O(n log n)	        Linearithmic	Merge Sort
+O(n²)	            Quadratic	Nested loops
+O(2ⁿ)	            Exponential	Recursive problems
+O(n!)	            Factorial	Traveling Salesman
+2️⃣ What is Space Complexity?
+
+Space Complexity = Extra memory used by an algorithm.
+
+Includes:
+
+✔ Variables
+✔ Data structures
+✔ Recursion stack
+
+Example:
+int a[100];   // O(1) space (fixed size)
+int a[n];     // O(n) space
+
+3️⃣ How to Calculate Time Complexity of Code 🔍
+🔹 Rule 1: Ignore constants
+for(int i=0;i<n;i++)   // O(n)
+
+
+Not O(2n) or O(3n)
+
+🔹 Rule 2: Single Loop
+for(int i=0;i<n;i++)
+
+
+➡ O(n)
+
+🔹 Rule 3: Nested Loops
+for(int i=0;i<n;i++)
+  for(int j=0;j<n;j++)
+
+
+➡ O(n²)
+
+🔹 Rule 4: Loop depends on half
+for(int i=1;i<n;i*=2)
+
+
+➡ O(log n)
+
+🔹 Rule 5: Different loops (Add)
+for(int i=0;i<n;i++)   // O(n)
+for(int j=0;j<n;j++)   // O(n)
+
+
+➡ O(n + n) = O(n)
+
+🔹 Rule 6: Nested different loops (Multiply)
+for(int i=0;i<n;i++)
+  for(int j=0;j<m;j++)
+
+
+➡ O(n × m)
+
+4️⃣ Time Complexity Examples (Very Important)
+Example 1:
+for(int i=0;i<n;i++)
+{
+    cout << i;
+}
+
+
+✅ O(n)
+
+Example 2:
+for(int i=0;i<n;i++)
+{
+    for(int j=0;j<i;j++)
+    {
+        cout << i << j;
+    }
+}
+
+
+➡ Total operations ≈ n(n−1)/2
+✅ O(n²)
+
+Example 3:
+int i = 1;
+while(i < n)
+{
+    i = i * 2;
+}
+
+
+➡ Each step doubles
+✅ O(log n)
+
+Example 4 (Function calls):
+void fun(int n)
+{
+    if(n==0) return;
+    fun(n-1);
+}
+
+
+➡ Called n times
+✅ O(n)
+
+Example 5 (Recursive – Fibonacci):
+fib(n) = fib(n-1) + fib(n-2)
+
+
+❌ Too many calls
+✅ O(2ⁿ)
+
+5️⃣ Best, Average & Worst Case
+Case	        Meaning
+Best Case	    Minimum time
+Average Case	Normal case
+Worst Case	    Maximum time (MOST IMPORTANT)
+
+📌 We usually calculate Worst Case
+
+6️⃣ How to Quickly Find Time Complexity.
+
+1️⃣ Count loops
+2️⃣ Check nested loops
+3️⃣ Ignore constants
+4️⃣ Drop lower-order terms
+5️⃣ Focus on largest term
+
+Example:
+
+O(n² + n + 10) → O(n²)
+
+7️⃣ Summary Table 📌
+Code Pattern	        Complexity
+One loop	            O(n)
+Two nested loops	    O(n²)
+Loop + log loop	        O(n log n)
+Recursive half	        O(log n)
+Fibonacci recursion	    O(2ⁿ)
