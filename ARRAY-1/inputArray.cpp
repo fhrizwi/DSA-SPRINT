@@ -10,10 +10,10 @@ int main()
     cout << "Enter the elements of array: ";
     for (int i = 0; i < n; i++)
     {
-        cin >> arr[i];
+        cin >> arr[i];   //for input elements printing
     }
     for (int i = 0; i < n; i++)
     {
-        cout << arr[i] << endl;
+        cout << arr[i] << endl; //for output element printing
     }
 }
