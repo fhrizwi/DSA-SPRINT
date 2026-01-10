@@ -3,7 +3,7 @@
 using namespace std;
 int main(){             //syntax
     vector <int> v;      //vector <datatype> anyname;
-    v.push_back(8);
+    v.push_back(8);       //push_back-> to insert an element
     cout<<v.size()<<endl;
     cout<<v.capacity()<<endl;
     cout<<"_ _ _ _ _ _ _ _ _"<<endl;
