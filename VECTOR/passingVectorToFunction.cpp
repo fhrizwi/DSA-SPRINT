@@ -3,8 +3,8 @@
 #include<algorithm>
 using namespace std;
 
-void change (vector<int> &a){
-    a[0]=100;
+void change (vector<int> &a){  //pass by value and pass by reference kya hota hai
+    a[0]=100;                   //vector ke case me ye & symbol use hota hai okkk
 }
 int main(){             
     vector <int> v;      
