@@ -53,3 +53,16 @@ int main() {
 
 // Time Complexity: Iterating through the array once → O(n)
 // Space Complexity: Uses only constant extra space → O(1)
+
+
+// YE LEETCODE 268 LOGIC ANSWER HAI
+// int missingNumber(int* nums, int numsSize) {
+//     int expectedSum = numsSize * (numsSize + 1) / 2;
+//     int actualSum = 0;
+
+//     for (int i = 0; i < numsSize; i++) {
+//         actualSum += nums[i];
+//     }
+
+//     return expectedSum - actualSum;
+// }
