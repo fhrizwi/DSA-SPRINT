@@ -62,3 +62,20 @@ int main() {
 // Output:
 // Unique count: 5
 // Array: 0 1 2 3 4
+
+
+//FOR LEETCODE-26
+// int removeDuplicates(int* nums, int numsSize) {
+//     if (numsSize == 0)
+//         return 0;
+
+//     int j = 1;   // index for next unique element
+
+//     for (int i = 1; i < numsSize; i++) {
+//         if (nums[i] != nums[j - 1]) {
+//             nums[j] = nums[i];
+//             j++;
+//         }
+//     }
+//     return j;   // number of unique elements
+// }
