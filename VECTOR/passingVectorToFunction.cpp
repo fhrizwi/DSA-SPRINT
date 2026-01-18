@@ -3,8 +3,9 @@
 #include<algorithm>
 using namespace std;
 
-void change (vector<int> &a){  //pass by value and pass by reference kya hota hai
+void change (vector<int> &a){  //pass by value and pass by reference kya hota haihanges karega
     a[0]=100;                   //vector ke case me ye & symbol use hota hai okkk
+                                //ye & sybol pass by reference hai means original me c
 }
 int main(){             
     vector <int> v;      
