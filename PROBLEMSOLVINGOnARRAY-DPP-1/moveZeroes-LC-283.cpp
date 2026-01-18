@@ -55,3 +55,22 @@ int main() {
 
 // Input:  0 1 0 3 12
 // Output: 1 3 12 0 0
+
+
+//LEETCODE-283
+// void moveZeroes(int* nums, int numsSize) {
+//     int j = 0; // position for next non-zero element
+
+//     for (int i = 0; i < numsSize; i++) {
+//         if (nums[i] != 0) {
+//             // Swap nums[i] and nums[j] only if i != j
+//             if (i != j) {
+//                 int temp = nums[i];
+//                 nums[i] = nums[j];
+//                 nums[j] = temp;
+//             }
+//             j++;
+//         }
+//     }
+// }
+
