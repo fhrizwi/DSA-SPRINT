@@ -1,0 +1,40 @@
+1.What is a character array in C++?
+ans:
+A character array in C++ is an array used to store a sequence of 
+characters. It is mainly used to store C-style strings, 
+where characters are stored one by one in consecutive memory locations.
+
+
+2.Why do we need a null character ('\0') in a character array?
+ans:
+The null character '\0' is used to mark the end of a string in 
+a character array. C++ uses this character to know where 
+the string ends while printing or processing it.
+
+
+3.What happens if we forget to add a null character at the end of a character array?
+ans:
+If the null character is missing, the program will not know where the string ends.
+This can cause:
+Printing of extra garbage characters
+Incorrect output
+Runtime errors or undefined behavior
+
+
+4.How is a character array different from a string (string class)?
+ans:
+Character Array	                    string Class
+
+Fixed size	                        Dynamic size
+Needs '\0' to end string	        No need for '\0'
+Less safe	                        More safe
+Fewer built-in functions	        Many built-in functions
+
+
+5.How many characters can be stored in this array?
+char name[10];
+
+ans:
+This array can store 9 characters, because 1 space is reserved for the null character ('\0').
+✔ Maximum characters = 10 − 1 = 9
+
