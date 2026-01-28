@@ -1,0 +1,12 @@
+2.❓ What is the mistake here?
+1.Why will this code fail for multi-word input? Fix it.
+char arr[10];
+cin >> arr;
+cout << arr;
+debug-- cin.getline(arr,10);
+
+2.❓ What is the mistake here?
+char arr[5] = "Hello";
+cout << arr;
+debugg--    char arr[6] = "Hello";
+            char arr[] = "Hello";
