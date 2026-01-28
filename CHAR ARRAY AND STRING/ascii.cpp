@@ -8,5 +8,7 @@ int main(){
     cout<<(int)ch<<endl;
 
     char chh[5]={'a','b','c','d','e'};
-    cout<<(int)(chh[0]);
+    cout<<(int)(chh[0])<<endl;
+    cout<<(int)(chh[2])<<endl;
+    cout<<(int)(chh[6])<<endl;
 }
